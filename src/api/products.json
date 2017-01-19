@@ -1,0 +1,34 @@
+{
+	"products": [
+		{
+			"name": "Death Wish Coffee",
+			"sku": "1",
+			"price": 9.99,
+			"features": [
+				"High caffeine",
+				"Fair trade",
+				"100% natural"
+			]
+		},
+		{
+			"name": "Starbucks Coffee",
+			"sku": "2",
+			"price": 7.99,
+			"features": [
+				"Bitter",
+				"Everywhere",
+				"Commercialized"
+			]
+		},
+		{
+			"name": "Peet's Coffee",
+			"sku": "3",
+			"price": 10.99,
+			"features": [
+				"Tasty",
+				"Delicious",
+				"Really Good"
+			]
+		}
+	]
+}
