@@ -1,9 +1,10 @@
 import React from 'react'
 import Price from './Price'
+import '../css/item-header.css'
 
 const ItemHeader = ({ name, price }) => (
-  <div>
-    <h4>{name}</h4>
+  <div className="item-header">
+    <h4><strong>{name}</strong></h4>
     <Price price={price}/>
   </div>
 )

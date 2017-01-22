@@ -2,4 +2,33 @@ body {
   margin: 0;
   padding-top: 100px;
   font-family: sans-serif;
+  background-color: #e8e8e8;
+  height:100%;
+}
+.sidebar {
+  padding-top: 50px;
+}
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+ul {
+  display: inline-block;
+  text-align: left;
+}
+html, .panel, .panel-body { 
+  height:100%; 
+  padding-bottom: 0px;
+}
+.panel{
+  padding-bottom: 50px;
+}
+.panel a{
+  position:absolute; 
+  margin-left:-100px;
+  left:50%;
+  width:200px;
+  bottom:15px;
 }

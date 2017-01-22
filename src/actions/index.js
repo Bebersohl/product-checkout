@@ -1,3 +1,5 @@
-export const REQUEST_PRODUCTS = 'REQUEST_PRODUCTS';
-export const RECEIVE_PRODUCTS = 'RECIEVE_PRODUCTS';
+import * as types from './constants'
 
+export const fetchItems = () => ({
+  type: types.FETCH_ITEMS_REQUESTED
+});

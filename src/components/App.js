@@ -1,18 +1,26 @@
 import React, { Component } from 'react'
-import logo from '../logo.svg'
-import data from '../api/products.json'
-import ItemsRow from './ItemsRow'
-import NavigationBar from './NavigationBar'
+import TopBar from './TopBar'
+import SideBarContent from './SideBarContent'
+import SideBar from 'react-fixed-sidebar'
 
-console.log(data.products[0].features)
+class App extends Component {
+  toggleSideBar = event => {
+    this.sidebar.toggle()
+  }
 
-const App = () => (
-  <div>
-    <NavigationBar/>
-    <div className="container">
-      <ItemsRow items={data.products}/>
-    </div>
-  </div>
-)
+  render() {
+    return (
+      <div>
+        <TopBar toggleSideBar={this.toggleSideBar}/>
+        <div className="container">
+          {this.props.children}
+        </div>
+        <SideBar ref={(sidebar => this.sidebar = sidebar)}>
+          <SideBarContent />
+        </SideBar>
+      </div>
+    );
+  }
+}
 
 export default App
