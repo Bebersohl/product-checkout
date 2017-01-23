@@ -3,7 +3,7 @@ import { ListGroup, ListGroupItem } from 'react-bootstrap'
 
 const SideBarContent = () => (
   <ListGroup>
-    <ListGroupItem href="/">Home</ListGroupItem>
+    <ListGroupItem href="#">Home</ListGroupItem>
     <ListGroupItem href="#">Help</ListGroupItem>
     <ListGroupItem href="#">Content</ListGroupItem>
   </ListGroup>

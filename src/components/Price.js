@@ -2,7 +2,7 @@ import React from 'react'
 
 const Price = ({ price }) => (
   <div>
-    ${price}
+    ${price.toFixed(2)}
   </div>
 )
 

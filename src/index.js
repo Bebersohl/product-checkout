@@ -7,16 +7,16 @@ import { createStore, applyMiddleware } from 'redux'
 import rootReducer from './reducers/index'
 import createSagaMiddleware from 'redux-saga'
 import rootSaga from './sagas'
-import logger from 'redux-log-diff'
-import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router'
+import { Router, Route, IndexRoute, browserHistory } from 'react-router'
 import ItemsRowContainer from './containers/ItemsRowContainer'
 import NotFound from './components/NotFound'
-import Checkout from './components/Checkout'
+import CheckoutContainer from './containers/CheckoutContainer'
+import ThankYou from './components/ThankYou'
 
 const sagaMiddleware = createSagaMiddleware()
 const store = createStore(
   rootReducer, 
-  applyMiddleware(sagaMiddleware, logger)
+  applyMiddleware(sagaMiddleware)
 )
 
 sagaMiddleware.run(rootSaga)
@@ -26,7 +26,8 @@ render(
     <Router history={browserHistory}>
       <Route path="/" component={App}>
         <IndexRoute component={ItemsRowContainer}/>
-        <Route path="checkout/:sku" component={Checkout}/>
+        <Route path="checkout/:sku" component={CheckoutContainer}/>
+        <Route path="thanks" component={ThankYou}/>
         <Route path="*" component={NotFound}/>
       </Route>
     </Router>

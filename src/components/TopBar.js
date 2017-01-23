@@ -1,5 +1,6 @@
 import React from 'react'
 import { Nav, NavItem, Navbar, Glyphicon } from 'react-bootstrap'
+import { Link } from 'react-router'
 import '../css/top-bar.css'
 
 const TopBar = ({ toggleSideBar }) => (
@@ -8,7 +9,7 @@ const TopBar = ({ toggleSideBar }) => (
       <NavItem eventKey={1} href="#" onClick={toggleSideBar}><Glyphicon glyph="menu-hamburger"/></NavItem>
     </Nav>
     <Navbar.Brand>
-      <a href="/">Buymart</a>
+      <Link to="/">Buymart</Link>
     </Navbar.Brand> 
   </Navbar>
 )

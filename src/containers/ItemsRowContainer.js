@@ -6,7 +6,9 @@ import Loader from '../components/Loader'
 
 class ItemsRowContainer extends Component {
   componentDidMount() {
-    this.props.dispatch(actions.fetchItems())
+    if(this.props.items.length === 0) {
+      this.props.dispatch(actions.fetchItems())
+    }
   }
   render() {
     if(this.props.isFetching){
