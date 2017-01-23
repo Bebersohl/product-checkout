@@ -1,29 +1,29 @@
 [
 	{
-		"name": "Death Wish Coffee",
+		"name": "Connected Coffee Machine",
 		"sku": "1",
 		"price": 9.99,
 		"features": [
-			"High caffeine",
-			"Fair trade",
-			"100% natural"
+			"Brews perfect cup of coffee",
+			"Fast",
+			"Easy to setup"
 		]
 	},
 	{
-		"name": "Starbucks Coffee",
+		"name": "Smart Plug",
 		"sku": "2",
 		"price": 7.99,
 		"features": [
-			"Bitter",
-			"Everywhere"
+			"Voice Control",
+			"Safe"
 		]
 	},
 	{
-		"name": "Peet's Coffee",
+		"name": "Virtual Reality Headset",
 		"sku": "3",
 		"price": 10.99,
 		"features": [
-			"Tasty"
+			"Low Cost"
 		]
 	}
 ]
